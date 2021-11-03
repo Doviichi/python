@@ -22,24 +22,12 @@ daniel = User('Daniel roth', 'dr@mail.com', 0 )
 bob = User('robert nickels', 'robnic@mail.com', 0)
 
 # deposit/withdraw amount
-john.make_deposit(100)
-john.make_deposit(290)
-john.withdraw_amount(10)
-john.withdraw_amount(30)
-daniel.make_deposit(500)
-daniel.make_deposit(900)
-daniel.withdraw_amount(190)
-daniel.withdraw_amount(20)
-bob.make_deposit(1000)
-bob.withdraw_amount(10)
-bob.withdraw_amount(20)
-bob.withdraw_amount(90)
+john.make_deposit(100).withdraw_amount(30).withdraw_amount(10).make_deposit(290)
+daniel.make_deposit(500).make_deposit(900).withdraw_amount(190).withdraw_amount(20)
+bob.make_deposit(1000).withdraw_amount(10).withdraw_amount(20).withdraw_amount(90)
 
 
-# print(john.amount)
-# print(john.name)
-# print(john.email)
-# print(john.display_user_balance)
+# print users name and account balance
 john.display_user_balance()
 daniel.display_user_balance()
 bob.display_user_balance()
