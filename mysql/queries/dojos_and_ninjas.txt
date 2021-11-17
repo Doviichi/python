@@ -1,0 +1,28 @@
+INSERT INTO dojos(name) VALUES ('Coding dojo');
+INSERT INTO dojos(name) VALUES ('Learning dojo');
+INSERT INTO dojos(name) VALUES ('Growing dojo');
+DELETE FROM dojos;
+INSERT INTO dojos(name) VALUES ('Coding dojo');
+INSERT INTO dojos(name) VALUES ('Learning dojo');
+INSERT INTO dojos(name) VALUES ('Growing dojo');
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('Dvora', 'cohen', 22, 4);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('Dovid', 'Ichi', 24, 4);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('Rachel', 'cichi', 22, 4);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('Michoel', 'kullock', 23, 5);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('Mendi', 'eliezer', 22, 5);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('isroel', 'ende', 27, 5);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('avremi', 'rendler', 32, 6);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('shalom', 'gorevitch', 72, 6);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ('Dovi', 'Ichillevuc', 22, 6);
+
+SELECT * FROM dojos
+join ninjas on dojos.id = ninjas.dojo_id
+where dojos.id = 4;
+SELECT * FROM dojos
+join ninjas on dojos.id = ninjas.dojo_id
+where dojos.id = 6;
+
+select dojos.name FROM dojos
+join ninjas on dojos.id = ninjas.dojo_id
+where ninjas.id = 9;
+
