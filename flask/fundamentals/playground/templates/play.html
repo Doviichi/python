@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play</title>
+    <style>
+        .all{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        h1{
+            font-family: monospace;
+            align-self: center;
+        }
+        .container{
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: solid black 2px;
+            border-radius: 10px;
+            margin: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <h1>Welcome!</h1>
+            <div class="container">
+            {%for x in range(0, num):%}
+                <div class="box" style="background-color: {{color}};"></div>
+            {%endfor%}
+            </div>
+    </div>
+</body>
+</html>
