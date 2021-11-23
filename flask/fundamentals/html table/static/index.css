@@ -1,0 +1,11 @@
+table, th, td{
+    border: solid black 1px;
+    border-collapse: collapse;
+    /* font-size: large; */
+    color: green;
+}
+th{
+    background-color: rgb(83, 21, 21);
+    color: green;
+    
+}
