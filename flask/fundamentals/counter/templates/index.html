@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.css')}}">
+    <title>Counter</title>
+</head>
+<body class="bg-secondary text-center col-6 my-5 mx-auto">
+    <h1 class="bg-secondary text-light">Counter</h1>
+    <p class="">{{session['count']}} Times</p>
+    <!-- forms -->
+    <!-- add button -->
+    <form action="/count" method="post">
+    <button type="submit" name="add_count" value="0" class="flex btn btn-outline-dark">Click to ADD one</button>
+    <!-- add menu -->
+    <div class="flex btn btn-outline-dark">
+    <label for="number" >Pick number to add</label>
+    <select name="number" id="number" class="flex btn btn-outline-dark">
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+    </select>
+    </div>
+    </form>
+    <!-- clear form -->
+    <form action="/clear" method="post">
+        <button type="submit" name="clear" class="flex btn btn-outline-dark">Click to CLEAR count</button>
+    </form>
+</body>
+</html>
