@@ -1,0 +1,5 @@
+counter (session) app
+-refresh the page to add one number to counter (also keeps track of how many times the user has been on the page).
+-click button to add one number to counter.
+-dropdown menu to pick how many numbers to add to counter.
+-clear button to clear the session.
