@@ -1,3 +1,8 @@
 users
 -root page, shows all users data from sql database
 -add user page, adds a user to sql and then redirects to root page showing all users data including the newly added user. 
+
+
+UPDATED
+-show user, shows the users info.
+-delete user, deletes the user.
