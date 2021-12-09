@@ -1,0 +1,6 @@
+dojo survey.
+- index page: 
+gives survey and validates if survey is filled out properly .
+then send info to database.
+- show page:
+shows the users input from the database.
