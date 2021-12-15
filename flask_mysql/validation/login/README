@@ -1,0 +1,11 @@
+login and registration:
+
+register:
+-validates name, email, password
+-bcrypt password
+-sends to database
+-if theres an issue with the validation, flash messages will come up to notify user to fix them.
+
+login:
+-checks if user is registered
+-checks if hashed password match
