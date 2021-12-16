@@ -1,0 +1,4 @@
+RECIPE 
+
+-logs in user or registers new user, bcrypt password, validation.
+-allows user to veiw, edit, create and delete recipe and connects to database.
